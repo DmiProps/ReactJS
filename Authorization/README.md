@@ -16,9 +16,35 @@ npm install @mui/material @emotion/react @emotion/styled @mui/material-nextjs @m
 npm install @fontsource/roboto
 ```
 
-2. Add `icon.ico` file to `/src/app` folder
+2. Add `theme.tsx` file to `/src` folder
+<details>
+<summary>Expand</summary>
 
-3. Add scripts into `package.json`
+```tsx
+'use client'
+
+import { Roboto, Roboto_Condensed } from 'next/font/google'
+import { createTheme } from '@mui/material/styles'
+
+const roboto = Roboto_Condensed({
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin', 'cyrillic-ext'],
+  display: 'swap',
+})
+
+const theme = createTheme({
+  typography: {
+    fontFamily: roboto.style.fontFamily,
+  },
+})
+
+export default theme;
+```
+</details>
+
+3. Add `icon.ico`, `layout.tsx` and `page.tsx` files to `/src/app` folder
+
+4. Add scripts into `package.json`
 <details>
 <summary>Expand</summary>
 
@@ -39,7 +65,7 @@ npm install @fontsource/roboto
 ```
 </details>
 
-4. Create `tscode.json`
+5. Create `tscode.json`
 <details>
 <summary>Expand</summary>
 
@@ -47,9 +73,9 @@ npm install @fontsource/roboto
 {
     "compilerOptions": {
         "lib": [
-        "dom",
-        "dom.iterable",
-        "esnext"
+            "dom",
+            "dom.iterable",
+            "esnext"
         ],
         "allowJs": true,
         "skipLibCheck": true,
@@ -63,9 +89,9 @@ npm install @fontsource/roboto
         "isolatedModules": true,
         "jsx": "preserve",
         "plugins": [
-        {
-            "name": "next"
-        }
+            {
+                "name": "next"
+            }
         ]
     },
     "include": [
@@ -80,6 +106,10 @@ npm install @fontsource/roboto
 }
 ```
 </details>
+
+6. (Optional) Place pages into `/src/pages/{page-name.tsx}`
+
+7. (Optional) Place components into `/src/components/{ComponentName.tsx}`
 
 ## Run
 ```
