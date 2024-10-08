@@ -17,7 +17,8 @@ npm install @fontsource/roboto
 Add `icon.ico` file to `/src/app` folder
 
 <details>
-<summary>Add scripts into `package.json`</summary>
+Add scripts into `package.json`
+<summary>Expand</summary>
 
 ```json
 "scripts": {
@@ -37,7 +38,8 @@ Add `icon.ico` file to `/src/app` folder
 </details>
 
 <details>
-<summary>Create `tscode.json`</summary>
+Create `tscode.json`
+<summary>Expand</summary>
 
 ```json
 {
