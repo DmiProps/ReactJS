@@ -43,6 +43,50 @@ export default theme;
 </details>
 
 3. Add `icon.ico`, `layout.tsx` and `page.tsx` files to `/src/app` folder
+<details>
+<summary>Expand</summary>
+
+`layout.tsx`:
+```tsx
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter'
+import { ThemeProvider } from '@mui/material/styles'
+import theme from '../theme'
+
+import CssBaseline from '@mui/material/CssBaseline';
+
+export default function RootLayout({
+    children,
+  }: {
+    children: React.ReactNode
+  }) {
+    return (
+      <html lang="en">
+        <body>
+          <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+            <ThemeProvider theme={theme}>
+              <CssBaseline />
+              {children}
+            </ThemeProvider>
+          </AppRouterCacheProvider>
+        </body>
+      </html>
+    )
+}
+```
+
+`page.tsx`
+```tsx
+import Container from '@mui/material/Container'
+
+export default function Page() {
+  return (
+    <Container maxWidth='lg'>
+      <h1>Main page</h1>
+    </Container>
+  )
+}
+```
+</details>
 
 4. Add scripts into `package.json`
 <details>
