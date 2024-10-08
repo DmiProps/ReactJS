@@ -16,6 +16,10 @@ npm install @mui/material @emotion/react @emotion/styled @mui/material-nextjs @m
 npm install @fontsource/roboto
 ```
 
+```
+npm install --save-dev @types/node typescript
+```
+
 2. Add `theme.tsx` file to `/src` folder
 <details>
 <summary>Expand</summary>
@@ -100,13 +104,6 @@ export default function Page() {
     "lint": "next lint"
 }
 ```
-
-```json
-"devDependencies": {
-    "@types/node": "22.7.4",
-    "typescript": "5.6.2"
-}
-```
 </details>
 
 5. Create `tscode.json`
@@ -151,7 +148,23 @@ export default function Page() {
 ```
 </details>
 
-6. (Optional) Place pages into `/src/pages/{page-name.tsx}`
+6. (Optional) Place pages into `/src/app/{page-name}/page.tsx`
+<details>
+<summary>Example</summary>
+
+`/src/app/sign-up/page.tsx`
+```tsx
+import Container from '@mui/material/Container'
+
+export default function Page() {
+    return (
+        <Container>
+            <h1>Sign up</h1>
+        </Container>
+    )
+}
+```
+</details>
 
 7. (Optional) Place components into `/src/components/{ComponentName.tsx}`
 
