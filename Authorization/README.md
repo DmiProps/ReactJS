@@ -14,8 +14,12 @@ npm install @mui/material @emotion/react @emotion/styled @mui/material-nextjs @m
 npm install @fontsource/roboto
 ```
 
-Add scripts into `package.json`:
-```(json)
+Add `icon.ico` file to `/src/app` folder
+
+<details>
+<summary>Add scripts into `package.json`</summary>
+
+```json
 "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -24,17 +28,54 @@ Add scripts into `package.json`:
 }
 ```
 
-Add dev dependencies into `package.json`:
-```(json)
+```json
 "devDependencies": {
     "@types/node": "22.7.4",
     "typescript": "5.6.2"
 }
 ```
+</details>
 
-Add `icon.ico` file to `/src/app` folder.
+<details>
+<summary>Create `tscode.json`</summary>
 
-Create `tscode.json`
+```json
+{
+    "compilerOptions": {
+        "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "noEmit": true,
+        "incremental": true,
+        "module": "esnext",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "plugins": [
+        {
+            "name": "next"
+        }
+        ]
+    },
+    "include": [
+        "next-env.d.ts",
+        ".next/types/**/*.ts",
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
+```
+</details>
 
 ## Run
 ```
