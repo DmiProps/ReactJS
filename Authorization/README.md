@@ -24,7 +24,7 @@ npm install --save-dev @types/node typescript
 <details>
 <summary>Expand</summary>
 
-```
+```sh
 # Logs
 logs
 *.log
