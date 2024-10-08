@@ -1,7 +1,7 @@
 # ReactJS
 Example sign up/sign in forms
 
-## Install
+## Create new app
 
 1. Install packages
 ```
@@ -20,7 +20,54 @@ npm install @fontsource/roboto
 npm install --save-dev @types/node typescript
 ```
 
-2. Add `theme.tsx` file to `/src` folder
+2. Add `.gitignore` file to `./` folder
+<details>
+<summary>Expand</summary>
+
+```
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Next.js build output
+.next
+out
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+```
+</details>
+
+3. Add `theme.tsx` file to `/src` folder
 <details>
 <summary>Expand</summary>
 
@@ -46,7 +93,7 @@ export default theme;
 ```
 </details>
 
-3. Add `icon.ico`, `layout.tsx` and `page.tsx` files to `/src/app` folder
+4. Add `icon.ico`, `layout.tsx` and `page.tsx` files to `/src/app` folder
 <details>
 <summary>Expand</summary>
 
@@ -92,7 +139,7 @@ export default function Page() {
 ```
 </details>
 
-4. Add scripts into `package.json`
+5. Add scripts into `package.json`
 <details>
 <summary>Expand</summary>
 
@@ -106,7 +153,7 @@ export default function Page() {
 ```
 </details>
 
-5. Create `tscode.json`
+6. Create `tscode.json`
 <details>
 <summary>Expand</summary>
 
@@ -148,7 +195,7 @@ export default function Page() {
 ```
 </details>
 
-6. (Optional) Place pages into `/src/app/{page-name}/page.tsx`
+7. (Optional) Place pages into `/src/app/{page-name}/page.tsx`
 <details>
 <summary>Example</summary>
 
@@ -166,7 +213,7 @@ export default function Page() {
 ```
 </details>
 
-7. (Optional) Place components into `/src/components/{ComponentName.tsx}`
+8. (Optional) Place components into `/src/components/{ComponentName.tsx}`
 
 ## Run
 ```
