@@ -2,6 +2,8 @@
 Example sign up/sign in forms
 
 ## Install
+
+1. Install packages
 ```
 npm install next@latest react@latest react-dom@latest
 ```
@@ -14,10 +16,10 @@ npm install @mui/material @emotion/react @emotion/styled @mui/material-nextjs @m
 npm install @fontsource/roboto
 ```
 
-Add `icon.ico` file to `/src/app` folder
+2. Add `icon.ico` file to `/src/app` folder
 
+3. Add scripts into `package.json`
 <details>
-Add scripts into `package.json`
 <summary>Expand</summary>
 
 ```json
@@ -37,8 +39,8 @@ Add scripts into `package.json`
 ```
 </details>
 
+4. Create `tscode.json`
 <details>
-Create `tscode.json`
 <summary>Expand</summary>
 
 ```json
