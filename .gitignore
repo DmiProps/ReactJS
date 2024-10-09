@@ -39,4 +39,4 @@ out
 .vscode-test
 
 # Other files
-.DS_Store
+DS_Store
