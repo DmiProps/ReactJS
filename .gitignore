@@ -37,3 +37,6 @@ out
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# Other files
+.DS_Store
