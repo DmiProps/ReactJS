@@ -213,7 +213,7 @@ export default function Page() {
 ```
 </details>
 
-8. (Optional) Place components into `/src/components/{ComponentName.tsx}`
+8. (Optional) Place components into `/src/app/components/{ComponentName.tsx}`
 
 ## Run
 ```
